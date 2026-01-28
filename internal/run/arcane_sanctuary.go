@@ -40,7 +40,7 @@ func (a ArcaneSanctuary) CheckConditions(parameters *RunParameters) SequencerRes
 	if !a.ctx.Data.Quests[quest.Act2TheSummoner].Completed() {
 		return SequencerSkip
 	}
-	return SequencerStop
+	return SequencerOk
 }
 
 func (a ArcaneSanctuary) Run(parameters *RunParameters) error {
